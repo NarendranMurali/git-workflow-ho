@@ -1,0 +1,9 @@
+name: My First GitHub WorkFlow
+on: [push]
+
+jobs:
+    run-shell-commands:
+        runs-on: ubutu-latest
+        steps:
+            - name: echo a string
+              run: echo "Hello World"
