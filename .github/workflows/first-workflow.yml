@@ -1,5 +1,9 @@
 name: My First GitHub WorkFlow
 on: [push]
+defaults:
+    run:
+        shell: bash
+        working-directory: /cd/ef
 
 jobs:
     run-shell-commands:
