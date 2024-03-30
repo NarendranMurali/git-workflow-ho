@@ -3,7 +3,11 @@ on: [push]
 
 jobs:
     run-shell-commands:
-        runs-on: ubutu-latest
+        runs-on: ubuntu-latest
         steps:
             - name: echo a string
               run: echo "Hello World"
+            - name: Multiline commands
+              run: |
+                node -v
+                npm -v
