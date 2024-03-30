@@ -2,6 +2,14 @@ name: Checkout Git
 on: [push]
 
 jobs:
+    checkout-with-action:
+        runs-on: ubuntu-latest
+        steps:
+            - name: list-files
+              run: ls -a
+            - uses: actions/checkout@v4.1.1
+            - name: list-files-after
+              run: ls -a
     checkout-git-repo:
         runs-on: ubuntu-latest
         steps:
